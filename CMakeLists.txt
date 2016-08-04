@@ -12,5 +12,7 @@ set(SOURCE_FILES
         classes/core/PubSub/PubSub.c classes/core/PubSub/PubSub.h
         classes/states/StateMachine/State.c classes/states/StateMachine/State.h
         classes/states/StateMachine/StateMachine.c classes/states/StateMachine/StateMachine.h
-        )
+        classes/modules/delay.c classes/modules/delay.h
+        states/IntroState.c states/IntroState.h)
+
 add_executable(GameFrameDemo ${SOURCE_FILES})
