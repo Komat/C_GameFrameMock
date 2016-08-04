@@ -13,6 +13,11 @@ set(SOURCE_FILES
         classes/states/StateMachine/State.c classes/states/StateMachine/State.h
         classes/states/StateMachine/StateMachine.c classes/states/StateMachine/StateMachine.h
         classes/modules/delay.c classes/modules/delay.h
-        states/IntroState.c states/IntroState.h)
+        states/loading/LoadintState.c states/loading/LoadintState.h
+        states/intro/IntroState.c states/intro/IntroState.h
+        states/main/MainState.c states/main/MainState.h
+        states/ending/EndingState.c states/ending/EndingState.h
+        states/game_over/GameOverState.c states/game_over/GameOverState.h
+)
 
 add_executable(GameFrameDemo ${SOURCE_FILES})
