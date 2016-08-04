@@ -2,4 +2,7 @@
 
 int main(void) {
 
+    printf("LAUNCH");
+
+    return 0;
 }
