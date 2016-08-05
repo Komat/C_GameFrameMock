@@ -102,7 +102,7 @@ static void print_nine() {
 }
 
 
-static static void print_id(void) {
+static void print_id(void) {
     printf("%s", state_id);
 }
 
@@ -192,7 +192,7 @@ void count_up(int *num) {
 //     二桁の場合に面倒なのでやめ
 //    print_number(*num);
 
-    delay(30);
+    mod_delay(30);
 
     if (*num < 100) {
         count_up(num);

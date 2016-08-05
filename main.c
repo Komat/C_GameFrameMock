@@ -8,7 +8,7 @@
 
 #include <stdio.h>
 #include "classes/states/StateMachine/StateMachine.h"
-#include "classes/modules/delay.h"
+#include "classes/modules/Modules.h"
 #include "states/loading/LoadintState.h"
 #include "states/intro/IntroState.h"
 #include "states/main/MainState.h"
@@ -47,9 +47,9 @@ int main(void) {
 
     state_machine_goto(state_machine, Loading);
     state_machine_goto(state_machine, Intro);
-    delay(1000);
+    mod_delay(1000);
     state_machine_goto(state_machine, Main);
-    delay(1000);
+    mod_delay(1000);
     state_machine_subscribe(ENTER_STATE, ending_enter_handler);
     state_machine_goto(state_machine, GameOver);
 

@@ -12,7 +12,9 @@ set(SOURCE_FILES
         classes/core/PubSub/PubSub.c classes/core/PubSub/PubSub.h
         classes/states/StateMachine/State.c classes/states/StateMachine/State.h
         classes/states/StateMachine/StateMachine.c classes/states/StateMachine/StateMachine.h
-        classes/modules/delay.c classes/modules/delay.h
+        classes/modules/Modules.h
+        classes/modules/Modules/delay/mod_delay.c classes/modules/Modules/delay/mod_delay.h
+        classes/modules/Modules/random/mod_random.c classes/modules/Modules/random/mod_random.h
         states/loading/LoadintState.c states/loading/LoadintState.h
         states/intro/IntroState.c states/intro/IntroState.h
         states/main/MainState.c states/main/MainState.h
