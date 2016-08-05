@@ -29,6 +29,10 @@ int main(void) {
     state_machine_subscribe(STAY_STATE, state_stay_handler);
     state_machine_subscribe(EXIT_STATE, state_exit_handler);
 
+
+    printf("\n\nRANDOM TEST %d\n\n", mod_random());
+
+
     hash *state_machine = state_machine_new();
 
     State *Loading = new_loading_state();
