@@ -71,6 +71,13 @@ void state_enter_handler(State *state) {
 }
 
 void ending_enter_handler(State *state) {
-    printf("%s::EXIT \n\n\n>>>>>>>>> GAME OVER.....\n>>>>>>>>> GAME OVER....\n>>>>>>>>> GAME OVER...\n>>>>>>>>> GAME OVER..\n>>>>>>>>> GAME OVER.\n>>>>>>>>> GAME OVER\n\n\n\n", state->id);
+
+    printf("    ██████╗ ██████╗ ███████╗\n");
+    printf("    ██╔═══██╗██╔══██╗╚══███╔╝\n");
+    printf("    ██║   ██║██████╔╝  ███╔╝\n");
+    printf("    ██║   ██║██╔══██╗ ███╔╝\n");
+    printf("    ╚██████╔╝██║  ██║███████╗\n");
+    printf("    ╚═════╝ ╚═╝  ╚═╝╚══════╝\n\n\n\n\n\n\n\n\n");
+
     state_machine_unsubscribe(ENTER_STATE, ending_enter_handler);
 }
