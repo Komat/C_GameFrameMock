@@ -10,3 +10,6 @@
 [submodule "classes/states/StateMachine"]
 	path = classes/states/StateMachine
 	url = https://github.com/Komat/C_Classes_StateMachine.git
+[submodule "classes/modules"]
+	path = classes/modules
+	url = https://github.com/Komat/C_Classes_Modules.git
